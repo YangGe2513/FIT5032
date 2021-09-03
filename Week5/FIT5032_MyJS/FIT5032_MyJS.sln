@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIT5032_MyJS", "FIT5032_MyJS\FIT5032_MyJS.csproj", "{2F554645-E738-454D-A13A-0D6A05C85184}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F554645-E738-454D-A13A-0D6A05C85184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F554645-E738-454D-A13A-0D6A05C85184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F554645-E738-454D-A13A-0D6A05C85184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F554645-E738-454D-A13A-0D6A05C85184}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4BFC7C41-A025-4792-A362-0DFD948930B1}
+	EndGlobalSection
+EndGlobal
