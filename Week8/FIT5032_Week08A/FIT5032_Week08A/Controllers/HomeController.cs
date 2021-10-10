@@ -50,7 +50,6 @@ namespace FIT5032_Week08A.Controllers
 
                     EmailSender es = new EmailSender();
                     es.Send(toEmail, subject, contents);
-
                     ViewBag.Result = "Email has been send.";
 
                     ModelState.Clear();
