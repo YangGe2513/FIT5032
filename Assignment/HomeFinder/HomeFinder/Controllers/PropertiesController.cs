@@ -17,12 +17,19 @@ namespace HomeFinder.Controllers
 
         // GET: Properties
         [Authorize]
-        public ActionResult Index()
+        public ActionResult Myproperties()
         {
-            var userId = User.Identity.GetUserId();
-            var properties = db.Properties.Where(p => p.UserId ==
-            userId).ToList();
-            return View(properties);
+            if (User.IsInRole("Admin")) 
+            { 
+                return View(db.Properties.ToList()); 
+            }
+            else
+            {
+                var userId = User.Identity.GetUserId();
+                var properties = db.Properties.Where(p => p.UserId ==
+                userId).ToList();
+                return View(properties);
+            }
         }
         public ActionResult Buy()
         {           
@@ -45,6 +52,7 @@ namespace HomeFinder.Controllers
         }
 
         // GET: Properties/Create
+        [Authorize]
         public ActionResult Create()
         {
             return View();
@@ -66,7 +74,7 @@ namespace HomeFinder.Controllers
             {
                 db.Properties.Add(property);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Myproperties");
             }
 
             return View(property);
@@ -84,6 +92,11 @@ namespace HomeFinder.Controllers
             {
                 return HttpNotFound();
             }
+            var userId = User.Identity.GetUserId();
+            if (property.UserId != userId && !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
             return View(property);
         }
 
@@ -98,7 +111,7 @@ namespace HomeFinder.Controllers
             {
                 db.Entry(property).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Myproperties");
             }
             return View(property);
         }
@@ -115,6 +128,11 @@ namespace HomeFinder.Controllers
             {
                 return HttpNotFound();
             }
+            var userId = User.Identity.GetUserId();
+            if (property.UserId != userId && !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
             return View(property);
         }
 
@@ -126,7 +144,7 @@ namespace HomeFinder.Controllers
             Property property = db.Properties.Find(id);
             db.Properties.Remove(property);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Myproperties");
         }
 
         protected override void Dispose(bool disposing)

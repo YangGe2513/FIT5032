@@ -58,11 +58,11 @@ namespace HomeFinder
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "897023093075-qjh1l5hdjtaifnrdm8jsaucksjnquja4.apps.googleusercontent.com",
+                ClientSecret = "2-Pzp3eEDO2Z5Vsx5OdCYyqI"
+            });
         }
     }
 }

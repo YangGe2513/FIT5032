@@ -16,7 +16,7 @@ namespace HomeFinder
             routes.MapRoute(
                 name: "MyProperties",
                 url: "Properties/{action}",
-                defaults: new { controller = "Properties", action = "default"}
+                defaults: new { controller = "Properties", action = "default" }
             );
 
             routes.MapRoute(

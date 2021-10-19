@@ -101,8 +101,8 @@ F:\FIT5032\Assignment\HomeFinder\HomeFinder\bin\Microsoft.Owin.Security.Twitter.
 F:\FIT5032\Assignment\HomeFinder\HomeFinder\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 F:\FIT5032\Assignment\HomeFinder\HomeFinder\bin\Microsoft.Owin.Security.OAuth.xml
 F:\FIT5032\Assignment\HomeFinder\HomeFinder\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\FIT5032\Assignment\HomeFinder\HomeFinder\obj\Debug\HomeFinder.csproj.AssemblyReference.cache
 F:\FIT5032\Assignment\HomeFinder\HomeFinder\obj\Debug\HomeFinder.csproj.CoreCompileInputs.cache
 F:\FIT5032\Assignment\HomeFinder\HomeFinder\obj\Debug\HomeFinder.csproj.CopyComplete
 F:\FIT5032\Assignment\HomeFinder\HomeFinder\obj\Debug\HomeFinder.dll
 F:\FIT5032\Assignment\HomeFinder\HomeFinder\obj\Debug\HomeFinder.pdb
+F:\FIT5032\Assignment\HomeFinder\HomeFinder\obj\Debug\HomeFinder.csproj.AssemblyReference.cache
